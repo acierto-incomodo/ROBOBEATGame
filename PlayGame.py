@@ -105,6 +105,12 @@ def main():
         messagebox.showerror("Error de Configuración", f"No se pudo cargar PlayGame.json:\n{e}")
         return
 
+    # Si solo hay una opción disponible, la lanzamos automáticamente y no mostramos la GUI
+    if len(game_modes) == 1:
+        single_mode = game_modes[0]
+        launch_exe(single_mode.get("path", ""))
+        return
+
     # Título de la GUI
     tk.Label(root, text="Plague Inc: Evolved Launcher", font=("Segoe UI", 16, "bold"), bg=bg_color, fg=fg_color).pack(pady=20)
     tk.Label(root, text="Selecciona un modo para iniciar:", font=("Segoe UI", 10), bg=bg_color, fg=fg_color).pack(pady=5)

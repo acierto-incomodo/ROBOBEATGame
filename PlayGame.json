@@ -1,15 +1,10 @@
 [
     {
-        "id": "Plague Inc Evolved Launcher"
+        "id": "ROBOBEAT"
     },
     {
-        "name": "PlagueIncEvolved",
+        "name": "ROBOBEAT",
         "description": "Ejecutable del juego",
-        "path": "/PlagueIncEvolved.exe"
-    },
-    {
-        "name": "ScenarioCreator",
-        "description": "Ejecutable del creador de escenarios",
-        "path": "/ScenarioCreator/PlagueIncSC.exe"
+        "path": "jugar.bat"
     }
 ]
